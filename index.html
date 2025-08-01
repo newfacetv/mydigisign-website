@@ -9,10 +9,19 @@
     <!-- SEO Meta Tags -->
     <meta name="keywords" content="digital signage software, cloud digital signage, AI digital signage, free digital signage, smart signage solution, digital signage for small business, automated screen management, free live TV for digital signage">
     <meta name="author" content="MyDigiSign">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="language" content="English">
     <meta name="geo.region" content="US, CA">
     <meta name="geo.placename" content="United States, Canada">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="MyDigiSign">
+    <meta name="application-name" content="MyDigiSign">
+    <meta name="format-detection" content="telephone=no">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="MyDigiSign | AI-Powered Free Digital Signage & Live TV">
@@ -20,16 +29,35 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mydigisign.ai">
     <meta property="og:image" content="https://mydigisign.ai/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MyDigiSign AI-Powered Digital Signage Platform">
     <meta property="og:site_name" content="MyDigiSign">
+    <meta property="og:locale" content="en_US">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="MyDigiSign | AI-Powered Free Digital Signage & Live TV">
     <meta name="twitter:description" content="Create and manage digital signage effortlessly. AI-powered, free to start, with live TV streaming on any screen.">
     <meta name="twitter:image" content="https://mydigisign.ai/twitter-image.jpg">
+    <meta name="twitter:image:alt" content="MyDigiSign AI-Powered Digital Signage Platform">
+    <meta name="twitter:site" content="@mydigisign">
+    <meta name="twitter:creator" content="@mydigisign">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://mydigisign.ai">
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -51,9 +79,44 @@
             "@type": "AggregateRating",
             "ratingValue": "4.8",
             "ratingCount": "1250"
-        }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MyDigiSign",
+            "url": "https://mydigisign.ai",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://mydigisign.ai/logo.png"
+            }
+        },
+        "screenshot": "https://mydigisign.ai/screenshot.jpg",
+        "softwareVersion": "1.0",
+        "releaseNotes": "AI-powered digital signage with free live TV streaming"
     }
     </script>
+    
+    <!-- Organization Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MyDigiSign",
+        "url": "https://mydigisign.ai",
+        "logo": "https://mydigisign.ai/logo.png",
+        "description": "AI-powered digital signage software with free live TV streaming",
+        "foundingDate": "2024",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "support@mydigisign.ai"
+        },
+        "sameAs": [
+            "https://twitter.com/mydigisign",
+            "https://linkedin.com/company/mydigisign"
+        ]
+    }
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -77,7 +140,7 @@
                 <a href="#pricing" class="nav-link">Pricing</a>
                 <a href="#devices" class="nav-link">Devices</a>
                 <a href="#analytics" class="nav-link">Analytics</a>
-                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="blog/" class="nav-link">Blog</a>
             </div>
             <div class="nav-cta">
                 <a href="#pricing" class="btn btn-secondary">Start Free</a>
@@ -91,14 +154,14 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" role="banner" aria-label="Main hero section">
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">AI-Powered Digital Signage for Everyone – Free to Start</h1>
                 <p class="hero-subtitle">Turn any screen into a smart display. No tech skills required. Create, schedule, and manage your content effortlessly – and enjoy free live TV on unlimited devices.</p>
                 <div class="hero-cta">
-                    <a href="#pricing" class="btn btn-primary">Start Free Today</a>
-                    <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+                    <a href="#pricing" class="btn btn-primary" aria-label="Start free digital signage trial">Start Free Today</a>
+                    <a href="#how-it-works" class="btn btn-outline" aria-label="Learn how digital signage works">See How It Works</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -139,26 +202,26 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features">
+    <section id="features" class="features" role="region" aria-labelledby="features-title">
         <div class="container">
-            <h2 class="section-title">Why MyDigiSign? AI Makes Digital Signage Effortless.</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
+            <h2 id="features-title" class="section-title">Why MyDigiSign? AI Makes Digital Signage Effortless.</h2>
+            <div class="features-grid" role="list">
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" aria-hidden="true">
                         <i class="fas fa-brain"></i>
                     </div>
                     <h3>AI-Powered Simplicity</h3>
                     <p>Our intelligent platform handles all the complexity behind the scenes. No design or IT experience needed – just upload, schedule, and go.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" aria-hidden="true">
                         <i class="fas fa-user-check"></i>
                     </div>
                     <h3>Free User Account</h3>
                     <p>Start for free with 1 device and 1 screen, perfect for testing or small projects. Upgrade anytime to add multiple screens and remove system ads.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
+                <div class="feature-card" role="listitem">
+                    <div class="feature-icon" aria-hidden="true">
                         <i class="fas fa-broadcast-tower"></i>
                     </div>
                     <h3>Free Live TV Channels</h3>
@@ -218,7 +281,7 @@
                         <li><i class="fas fa-check"></i> Access to free live TV channels</li>
                         <li><i class="fas fa-check"></i> Basic content management</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Start Free</a>
+                    <a href="#pricing" class="btn btn-primary">Start Free</a>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-badge trial">Trial</div>
@@ -230,7 +293,7 @@
                         <li><i class="fas fa-check"></i> Multiple devices & screens</li>
                         <li><i class="fas fa-check"></i> Advanced AI features</li>
                     </ul>
-                    <a href="#" class="btn btn-outline">Start Trial</a>
+                    <a href="#pricing" class="btn btn-outline">Start Trial</a>
                 </div>
                 <div class="pricing-card">
                     <h3>Paid Plans</h3>
@@ -241,11 +304,11 @@
                         <li><i class="fas fa-check"></i> Priority AI-powered analytics</li>
                         <li><i class="fas fa-check"></i> Smart management features</li>
                     </ul>
-                    <a href="#" class="btn btn-outline">Explore Plans</a>
+                    <a href="#pricing" class="btn btn-outline">Explore Plans</a>
                 </div>
             </div>
             <div class="pricing-cta">
-                <a href="#" class="btn btn-primary">Start Free – Upgrade Anytime</a>
+                <a href="#pricing" class="btn btn-primary">Start Free – Upgrade Anytime</a>
             </div>
         </div>
     </section>
@@ -262,7 +325,7 @@
                     </div>
                     <h3>Android TV</h3>
                     <p>Available on Google Play Store</p>
-                    <a href="#" class="btn btn-outline">Get on Google Play</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.mydigisign" class="btn btn-outline" target="_blank" rel="noopener">Get on Google Play</a>
                 </div>
                 <div class="device-card">
                     <div class="device-icon">
@@ -270,7 +333,7 @@
                     </div>
                     <h3>Fire TV</h3>
                     <p>Available on Amazon Appstore</p>
-                    <a href="#" class="btn btn-outline">Get on Amazon</a>
+                    <a href="https://www.amazon.com/dp/B08XXXXXXX" class="btn btn-outline" target="_blank" rel="noopener">Get on Amazon</a>
                 </div>
                 <div class="device-card">
                     <div class="device-icon">
@@ -278,7 +341,7 @@
                     </div>
                     <h3>Samsung SmartTV</h3>
                     <p>Available on Samsung App Store</p>
-                    <a href="#" class="btn btn-outline">Get on Samsung</a>
+                    <a href="https://www.samsung.com/apps/mydigisign" class="btn btn-outline" target="_blank" rel="noopener">Get on Samsung</a>
                 </div>
                 <div class="device-card">
                     <div class="device-icon">
@@ -286,7 +349,7 @@
                     </div>
                     <h3>LG SmartTV</h3>
                     <p>Available on LG Content Store</p>
-                    <a href="#" class="btn btn-outline">Get on LG Store</a>
+                    <a href="https://www.lg.com/apps/mydigisign" class="btn btn-outline" target="_blank" rel="noopener">Get on LG Store</a>
                 </div>
             </div>
         </div>
@@ -328,7 +391,7 @@
             <h2>Your Screens. Our AI. Zero Stress.</h2>
             <p>Start free today and transform any display into an AI-powered, live TV-ready digital signage system.</p>
             <div class="cta-buttons">
-                <a href="#" class="btn btn-primary">Get Started Free</a>
+                <a href="#pricing" class="btn btn-primary">Get Started Free</a>
                 <a href="#pricing" class="btn btn-outline">Explore Plans</a>
             </div>
         </div>
@@ -357,15 +420,14 @@
                     </div>
                     <div class="footer-column">
                         <h4>Support</h4>
-                        <a href="#">Help Center</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Documentation</a>
+                        <a href="mailto:support@mydigisign.ai">Contact Us</a>
+                        <a href="blog/">Blog</a>
                     </div>
                     <div class="footer-column">
                         <h4>Company</h4>
-                        <a href="#">About</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Careers</a>
+                        <a href="mailto:info@mydigisign.ai">About</a>
+                        <a href="blog/">Blog</a>
+                        <a href="mailto:careers@mydigisign.ai">Careers</a>
                     </div>
                 </div>
             </div>
