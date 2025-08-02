@@ -144,12 +144,9 @@
                 <!-- Contact Form -->
                 <div class="contact-form-container">
                     <h2 class="section-title">Send Us a Message</h2>
-                    <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <form class="contact-form" id="contactForm" name="contact" netlify>
                         <!-- Hidden fields for Netlify -->
                         <input type="hidden" name="form-name" value="contact" />
-                        <p class="hidden">
-                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                        </p>
                         
                         <div class="form-group">
                             <label for="name" class="form-label">Full Name *</label>
@@ -318,25 +315,38 @@
 
     <script src="script.js"></script>
     <script>
-        // Contact form handling for Netlify
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            // Let Netlify handle the form submission
-            // The form will be processed by Netlify Forms automatically
+        // Simple form handling for Netlify
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
             
-            // Show loading state
-            const submitBtn = this.querySelector('.contact-submit');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-            submitBtn.disabled = true;
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    // Show loading state
+                    const submitBtn = this.querySelector('.contact-submit');
+                    if (submitBtn) {
+                        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                        submitBtn.disabled = true;
+                    }
+                });
+            }
             
-            // Form will submit to Netlify automatically
-            // Success/error handling will be managed by Netlify's redirect or success page
+            // Handle success message from URL parameters
+            if (window.location.search.includes('success=true')) {
+                const successMessage = document.createElement('div');
+                successMessage.className = 'success-message';
+                successMessage.innerHTML = `
+                    <div style="background: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin: 20px 0; border: 1px solid #c3e6cb;">
+                        <i class="fas fa-check-circle"></i>
+                        Thank you for your message! We'll get back to you within 24 hours.
+                    </div>
+                `;
+                
+                const formContainer = document.querySelector('.contact-form-container');
+                if (formContainer) {
+                    formContainer.insertBefore(successMessage, formContainer.firstChild);
+                }
+            }
         });
-        
-        // Optional: Add success message handling if using Netlify's success page
-        if (window.location.search.includes('success=true')) {
-            alert('Thank you for your message! We\'ll get back to you within 24 hours.');
-        }
     </script>
 </body>
 </html> 
