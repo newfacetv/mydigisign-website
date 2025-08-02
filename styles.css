@@ -2672,7 +2672,10 @@ html {
 
 /* Netlify Form Honeypot */
 .hidden {
-    display: none;
+    display: none !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
 }
 
 /* Success Page Styles */

@@ -83,6 +83,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
     <!-- Navigation -->
@@ -144,7 +145,11 @@
                 <!-- Contact Form -->
                 <div class="contact-form-container">
                     <h2 class="section-title">Send Us a Message</h2>
-                    <form class="contact-form" id="contactForm" name="contact" netlify>
+                    <form class="contact-form" id="contactForm" name="contact" netlify netlify-honeypot="bot-field">
+                        <!-- Honeypot field to prevent spam -->
+                        <p class="hidden">
+                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        </p>
                         <div class="form-group">
                             <label for="name" class="form-label">Full Name *</label>
                             <input type="text" id="name" name="name" class="form-input" required>
@@ -177,6 +182,8 @@
                             <label for="message" class="form-label">Message *</label>
                             <textarea id="message" name="message" class="form-textarea" rows="6" required placeholder="Tell us how we can help you..."></textarea>
                         </div>
+                        
+
                         
                         <button type="submit" class="btn btn-primary contact-submit">
                             <i class="fas fa-paper-plane"></i>
