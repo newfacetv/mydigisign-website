@@ -310,26 +310,22 @@
 
 
 
+    <!-- Hidden form for Netlify form detection -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="text" name="company" />
+        <select name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="support">Technical Support</option>
+            <option value="sales">Sales & Pricing</option>
+            <option value="partnership">Partnership</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+        </select>
+        <textarea name="message"></textarea>
+    </form>
+
     <script src="script.js"></script>
-    <script>
-        // Simple form handling for Netlify
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('contactForm');
-            
-            if (form) {
-                form.addEventListener('submit', function(e) {
-                    // Show loading state
-                    const submitBtn = this.querySelector('.contact-submit');
-                    if (submitBtn) {
-                        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                        submitBtn.disabled = true;
-                    }
-                    
-                    // Let Netlify handle the submission
-                    // The form will redirect to success page after submission
-                });
-            }
-        });
-    </script>
 </body>
 </html> 
