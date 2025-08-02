@@ -2673,4 +2673,158 @@ html {
 /* Netlify Form Honeypot */
 .hidden {
     display: none;
+}
+
+/* Success Page Styles */
+.success-section {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.success-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+    font-size: 80px;
+    color: #10b981;
+    margin-bottom: 30px;
+    animation: bounce 1s ease-in-out;
+}
+
+.success-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    font-size: 18px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.success-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.success-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #64748b;
+    font-size: 16px;
+}
+
+.success-detail i {
+    color: #3b82f6;
+    font-size: 18px;
+    width: 20px;
+}
+
+.success-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.success-help {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 30px;
+}
+
+.success-help h3 {
+    color: #1e293b;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.success-help p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.help-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.help-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.help-link:hover {
+    background: #f1f5f9;
+    color: #2563eb;
+    transform: translateY(-2px);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive Success Page */
+@media (max-width: 768px) {
+    .success-section {
+        padding: 100px 20px 60px;
+    }
+    
+    .success-content {
+        padding: 40px 20px;
+    }
+    
+    .success-title {
+        font-size: 28px;
+    }
+    
+    .success-message {
+        font-size: 16px;
+    }
+    
+    .success-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .help-links {
+        flex-direction: column;
+        align-items: center;
+    }
 } 
