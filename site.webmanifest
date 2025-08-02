@@ -1,6 +1,6 @@
 {
-    "name": "MyDigiSign - AI-Powered Digital Signage",
-    "short_name": "MyDigiSign",
+    "name": "MyDigiSign.AI - AI-Powered Digital Signage",
+    "short_name": "MyDigiSign.AI",
     "description": "AI-powered digital signage software with free live TV streaming",
     "start_url": "/",
     "display": "standalone",

@@ -1,6 +1,6 @@
-# MyDigiSign Website
+# MyDigiSign.AI Website
 
-A modern, responsive website for MyDigiSign - AI-Powered Digital Signage for Everyone. Built with HTML5, CSS3, and vanilla JavaScript.
+A modern, responsive website for MyDigiSign.AI - AI-Powered Digital Signage for Everyone. Built with HTML5, CSS3, and vanilla JavaScript.
 
 ## 🎨 Features
 
@@ -74,4 +74,4 @@ npx http-server
 
 ---
 
-**Built for MyDigiSign** 🚀 
+**Built for MyDigiSign.AI** 🚀 
