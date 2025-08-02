@@ -1,6 +1,6 @@
-# Feature Images - Placeholders
+# Feature Images
 
-This directory contains placeholder images for the hero section feature showcase. Replace these placeholder files with actual images of your digital signage platform.
+This directory contains images for the hero section feature showcase. Replace these files with actual images of your digital signage platform.
 
 ## Image Specifications
 
@@ -12,31 +12,31 @@ This directory contains placeholder images for the hero section feature showcase
 
 ## Required Images
 
-### 1. `live-tv-placeholder.jpg`
+### 1. `live-tv.jpg`
 **Content**: Screenshot of live TV streaming interface
 **Description**: Show the live TV channels interface, streaming controls, or channel selection
 
-### 2. `ai-content-placeholder.jpg`
+### 2. `ai-content.jpg`
 **Content**: Screenshot of AI content generation interface
 **Description**: Show AI tools, content creation features, or automated content generation
 
-### 3. `video-clips-placeholder.jpg`
+### 3. `video-clips.jpg`
 **Content**: Screenshot of video content management interface
 **Description**: Show video upload, editing, or playback interface
 
-### 4. `slideshows-placeholder.jpg`
+### 4. `slideshows.jpg`
 **Content**: Screenshot of slideshow creation interface
 **Description**: Show image gallery, slideshow builder, or presentation tools
 
-### 5. `analytics-placeholder.jpg`
+### 5. `analytics.jpg`
 **Content**: Screenshot of analytics dashboard interface
 **Description**: Show charts, metrics, performance data, or insights
 
-### 6. `scheduling-placeholder.jpg`
+### 6. `scheduling.jpg`
 **Content**: Screenshot of content scheduling interface
 **Description**: Show calendar, timeline, or scheduling tools
 
-### 7. `ai-agent-placeholder.jpg`
+### 7. `ai-agent.jpg`
 **Content**: Screenshot of AI agent interface
 **Description**: Show AI assistant, chatbot, or automation features
 
@@ -50,14 +50,14 @@ This directory contains placeholder images for the hero section feature showcase
 
 ## File Naming Convention
 
-Keep the same filenames as the placeholders to maintain the existing code structure:
-- `live-tv-placeholder.jpg`
-- `ai-content-placeholder.jpg`
-- `video-clips-placeholder.jpg`
-- `slideshows-placeholder.jpg`
-- `analytics-placeholder.jpg`
-- `scheduling-placeholder.jpg`
-- `ai-agent-placeholder.jpg`
+Keep the same filenames to maintain the existing code structure:
+- `live-tv.jpg`
+- `ai-content.jpg`
+- `video-clips.jpg`
+- `slideshows.jpg`
+- `analytics.jpg`
+- `scheduling.jpg`
+- `ai-agent.jpg`
 
 ## CSS Styling
 
