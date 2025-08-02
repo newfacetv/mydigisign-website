@@ -172,6 +172,32 @@ body {
     color: var(--primary-black);
 }
 
+/* Primary button on yellow backgrounds - better contrast */
+.hero .btn-primary,
+.closing-cta .btn-primary,
+.blog-cta .btn-primary,
+.faq-cta .btn-primary,
+.newsletter-section .btn-primary,
+.about-hero .btn-primary,
+.mission-section .btn-primary {
+    background-color: var(--primary-black);
+    color: var(--white);
+    border-color: var(--primary-black);
+}
+
+.hero .btn-primary:hover,
+.closing-cta .btn-primary:hover,
+.blog-cta .btn-primary:hover,
+.faq-cta .btn-primary:hover,
+.newsletter-section .btn-primary:hover,
+.about-hero .btn-primary:hover,
+.mission-section .btn-primary:hover {
+    background-color: var(--dark-gray);
+    border-color: var(--dark-gray);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
 /* Navigation */
 .navbar {
     position: fixed;
@@ -750,9 +776,26 @@ body {
     color: var(--white);
 }
 
+/* Footer logo specific spacing - bring .AI closer */
+.footer-logo .logo-ai {
+    right: -30px;
+}
+
+/* Footer logo layout - logo and tagline side by side */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.footer-logo .logo {
+    flex-shrink: 0;
+}
+
 .footer-logo p {
-    margin-top: var(--spacing-md);
+    margin: 0;
     color: var(--gray);
+    font-size: 0.9rem;
 }
 
 .footer-links {
