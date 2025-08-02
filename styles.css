@@ -2943,9 +2943,8 @@ html {
 
 /* About Page Styles */
 .about-hero {
-    padding: calc(var(--spacing-xxl) + 2rem) 0 var(--spacing-xxl) 0;
+    padding: calc(80px + var(--spacing-xxl)) 0 var(--spacing-xl);
     background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--secondary-yellow) 100%);
-    color: var(--primary-black);
     text-align: center;
 }
 
@@ -2957,14 +2956,17 @@ html {
 .about-title {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: var(--spacing-lg);
     line-height: 1.2;
+    margin-bottom: var(--spacing-lg);
+    color: var(--primary-black);
 }
 
 .about-subtitle {
     font-size: 1.25rem;
+    color: var(--dark-gray);
+    max-width: 800px;
+    margin: 0 auto;
     line-height: 1.6;
-    opacity: 0.9;
 }
 
 .our-story {
