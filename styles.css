@@ -11,6 +11,8 @@
     --primary-black: #000000;
     --secondary-yellow: #FFB84D; /* Lighter yellow-orange */
     --accent-yellow: #FF8C00; /* Darker yellow-orange */
+    --primary-blue: #2563eb; /* Primary blue for accents */
+    --secondary-blue: #3b82f6; /* Secondary blue for gradients */
     --white: #FFFFFF;
     --light-gray: #F8F9FA;
     --gray: #6C757D;
