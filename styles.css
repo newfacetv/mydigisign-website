@@ -2394,42 +2394,65 @@ html {
 
 /* Breadcrumbs Styles */
 .breadcrumbs {
-    background-color: var(--light-gray);
-    padding: var(--spacing-md) 0;
-    border-bottom: 1px solid var(--gray-light);
+    background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+    padding: var(--spacing-lg) 0;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .breadcrumb-nav {
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 .breadcrumb-link {
-    color: var(--gray);
+    color: var(--primary-blue);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--border-radius);
+    position: relative;
 }
 
 .breadcrumb-link:hover {
     color: var(--primary-yellow);
+    background-color: rgba(255, 165, 0, 0.1);
+    transform: translateY(-1px);
 }
 
 .breadcrumb-separator {
-    color: var(--gray);
+    color: #94a3b8;
     margin: 0 var(--spacing-sm);
+    font-weight: 400;
+    font-size: 0.8rem;
 }
 
 .breadcrumb-current {
     color: var(--primary-black);
-    font-weight: 500;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--primary-yellow);
 }
 
 /* Responsive Breadcrumbs */
 @media (max-width: 768px) {
+    .breadcrumbs {
+        padding: var(--spacing-md) 0;
+    }
+    
     .breadcrumb-nav {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+    
+    .breadcrumb-link,
+    .breadcrumb-current {
+        padding: 0.4rem 0.6rem;
     }
     
     .breadcrumb-separator {
