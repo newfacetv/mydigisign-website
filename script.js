@@ -264,8 +264,10 @@ document.addEventListener('DOMContentLoaded', function() {
     initFeatureHover();
     initNavbarScroll();
     
-    // Show loading animation
-    showLoading();
+    // Show loading animation only on home page
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname.endsWith('/index.html')) {
+        showLoading();
+    }
     
     // Add CSS for loader
     const loaderStyles = document.createElement('style');
