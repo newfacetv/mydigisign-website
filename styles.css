@@ -2943,9 +2943,9 @@ html {
 
 /* About Page Styles */
 .about-hero {
-    padding: var(--spacing-xxl) 0;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-    color: white;
+    padding: calc(var(--spacing-xxl) + 2rem) 0 var(--spacing-xxl) 0;
+    background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--secondary-yellow) 100%);
+    color: var(--primary-black);
     text-align: center;
 }
 
