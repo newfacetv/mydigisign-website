@@ -144,7 +144,7 @@
                 <!-- Contact Form -->
                 <div class="contact-form-container">
                     <h2 class="section-title">Send Us a Message</h2>
-                    <form class="contact-form" id="contactForm" name="contact" netlify action="/success.html">
+                    <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" action="/success.html">
                         <!-- Hidden fields for Netlify -->
                         <input type="hidden" name="form-name" value="contact" />
                         
@@ -312,6 +312,22 @@
             </div>
         </div>
     </footer>
+
+    <!-- Hidden form for Netlify form detection -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="text" name="company" />
+        <select name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="support">Technical Support</option>
+            <option value="sales">Sales & Pricing</option>
+            <option value="partnership">Partnership</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+        </select>
+        <textarea name="message"></textarea>
+    </form>
 
     <script src="script.js"></script>
     <script>

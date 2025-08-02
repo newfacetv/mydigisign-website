@@ -58,4 +58,5 @@
 [[forms]]
   name = "contact"
   [forms.notifications]
-    email = "support@mydigisign.ai" 
+    email = "support@mydigisign.ai"
+    subject = "New Contact Form Submission - MyDigiSign.AI" 
