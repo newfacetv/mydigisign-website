@@ -3180,11 +3180,13 @@ html {
     opacity: 0.9;
 }
 
-.cta-buttons {
+.about-cta .cta-buttons {
     display: flex;
     gap: var(--spacing-md);
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
