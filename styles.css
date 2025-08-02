@@ -933,6 +933,16 @@ body {
         gap: var(--spacing-lg);
     }
     
+    .footer-column {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .footer-column a {
+        display: block;
+        padding: var(--spacing-sm) 0;
+        font-size: 0.95rem;
+    }
+    
     .pricing-card.featured {
         transform: none;
     }
