@@ -52,4 +52,10 @@
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 200 
+  status = 200
+
+# Form notifications
+[[forms]]
+  name = "contact"
+  [forms.notifications]
+    email = "support@mydigisign.ai" 
