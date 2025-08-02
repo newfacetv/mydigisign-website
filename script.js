@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Hero Section Content Slides Animation
+// Hero Section Feature Showcase Animation
 function initContentSlides() {
-    const slides = document.querySelectorAll('.content-slide');
+    const slides = document.querySelectorAll('.feature-slide');
     let currentSlide = 0;
     
     function showSlide(index) {
@@ -42,8 +42,8 @@ function initContentSlides() {
     // Show first slide
     showSlide(0);
     
-    // Auto-advance slides every 3 seconds
-    setInterval(nextSlide, 3000);
+    // Auto-advance slides every 4 seconds
+    setInterval(nextSlide, 4000);
 }
 
 // Smooth Scrolling for Navigation Links
