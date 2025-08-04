@@ -7,6 +7,9 @@
     "background_color": "#ffffff",
     "theme_color": "#2563eb",
     "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en",
+    "dir": "ltr",
     "icons": [
         {
             "src": "/favicon-16x16.png",

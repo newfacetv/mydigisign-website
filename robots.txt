@@ -47,7 +47,6 @@ Disallow: /staging/
 
 # Block access to file types that shouldn't be indexed
 Disallow: /*.json$
-Disallow: /*.xml$
 Disallow: /*.txt$
 Disallow: /*.log$
 Disallow: /*.sql$

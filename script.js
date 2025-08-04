@@ -353,6 +353,19 @@ window.addEventListener('scroll', debounce(() => {
     // Any scroll-based functionality can be added here
 }, 10));
 
+// Service Worker Registration
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+                console.log('SW registered: ', registration);
+            })
+            .catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+            });
+    });
+}
+
 // Export functions for potential external use
 window.MyDigiSign = {
     validateForm,

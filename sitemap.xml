@@ -7,7 +7,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://mydigisign.ai/</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -15,35 +15,35 @@
     <!-- Blog Section -->
     <url>
         <loc>https://mydigisign.ai/blog/</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://mydigisign.ai/blog/blog.html</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://mydigisign.ai/blog/blog-top-5-free-digital-signage-2025.html</loc>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://mydigisign.ai/blog/blog-3-minutes-setup.html</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://mydigisign.ai/blog/blog-ai-simplicity.html</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://mydigisign.ai/blog/blog-free-live-tv.html</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -51,14 +51,14 @@
     <!-- Important Pages -->
     <url>
         <loc>https://mydigisign.ai/about.html</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://mydigisign.ai/contact.html</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -68,7 +68,7 @@
     <!-- Additional Important Pages -->
     <url>
         <loc>https://mydigisign.ai/faq.html</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -76,7 +76,7 @@
     <!-- Form Success Page -->
     <url>
         <loc>https://mydigisign.ai/success.html</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
