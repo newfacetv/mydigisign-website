@@ -58,6 +58,11 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
 # No redirects needed - static HTML files are served directly
 
 # Form notifications
