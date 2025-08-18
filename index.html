@@ -111,24 +111,7 @@
     }
     </script>
 
-    <!-- Test Google Analytics Button (Remove after testing) -->
-    <button id="ga-test" style="position: fixed; top: 10px; right: 10px; z-index: 9999; background: red; color: white; border: none; padding: 10px; cursor: pointer;" onclick="testGA()">Test GA</button>
-    <script>
-        function testGA() {
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'test_event', {
-                    'event_category': 'debug',
-                    'event_label': 'manual_test',
-                    'value': 1
-                });
-                console.log('Test GA Event sent!');
-                alert('GA Test Event Sent! Check console and GA dashboard.');
-            } else {
-                console.error('gtag is not available!');
-                alert('gtag is not available! Check console for errors.');
-            }
-        }
-    </script>
+
     
     <!-- Organization Structured Data -->
     <script type="application/ld+json">

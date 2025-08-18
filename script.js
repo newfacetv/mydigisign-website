@@ -35,7 +35,6 @@ function initGoogleAnalytics() {
                     'event_label': this.textContent.trim() || this.className,
                     'value': 1
                 });
-                console.log('GA Event: button_click', this.textContent.trim());
             }
         });
     });
@@ -50,7 +49,6 @@ function initGoogleAnalytics() {
                     'event_label': this.action || 'contact_form',
                     'value': 1
                 });
-                console.log('GA Event: form_submit', this.action);
             }
         });
     });
@@ -65,7 +63,6 @@ function initGoogleAnalytics() {
                     'event_label': this.href,
                     'value': 1
                 });
-                console.log('GA Event: external_link_click', this.href);
             }
         });
     });
@@ -82,28 +79,22 @@ function initGoogleAnalytics() {
                     'event_label': scrollPercent + '%',
                     'value': scrollPercent
                 });
-                console.log('GA Event: scroll_depth', scrollPercent + '%');
             }
         }
     });
 
     // Track time on page
     setTimeout(function() {
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'time_on_page', {
-                'event_category': 'engagement',
-                'event_label': '30_seconds',
-                'value': 30
-            });
-            console.log('GA Event: time_on_page 30 seconds');
-        }
+                    if (typeof gtag !== 'undefined') {
+                gtag('event', 'time_on_page', {
+                    'event_category': 'engagement',
+                    'event_label': '30_seconds',
+                    'value': 30
+                });
+            }
     }, 30000);
 
-    // Debug: Log GA status
-    console.log('Google Analytics initialized. gtag available:', typeof gtag !== 'undefined');
-    if (typeof gtag !== 'undefined') {
-        console.log('GA Tracking ID:', window.gtag);
-    }
+
 }
 
 // Hero Section Feature Showcase Animation
