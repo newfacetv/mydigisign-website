@@ -48,6 +48,13 @@
         <priority>0.8</priority>
     </url>
 
+    <url>
+        <loc>https://mydigisign.ai/blog/blog-business-tv-entertainment.html</loc>
+        <lastmod>2025-01-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Important Pages -->
     <url>
         <loc>https://mydigisign.ai/about.html</loc>
